@@ -26,6 +26,8 @@ dim(train)
 dim(test)
 
 #scale and Preprocess the selected variables 
+install.packages('caret)
+library('caret') 
 
 cols = c()
 pre_proc_val <- preProcess(train[,cols], method = c("center", "scale"))
